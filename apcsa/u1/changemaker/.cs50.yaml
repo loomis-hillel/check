@@ -1,18 +1,1 @@
-check50:
-  checks:
-    43 cents change:
-      - run: javac ChangeMaker.java | java ChangeMaker
-        stdin:  |
-                .57 
-                1.00
-        stdout: | 
-                $ 20.00: 0
-                $ 10.00: 0
-                $  5.00: 0
-                $  1.00: 0
-                $  0.25: 1
-                $  0.10: 1
-                $  0.05: 1
-                $  0.01: 3
-        exit: 0
-        
+check50: true

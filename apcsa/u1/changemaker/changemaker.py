@@ -30,8 +30,8 @@ def test0(compiles):
         raise check50.Failure(help)
 
 @check50.check()
-def test3541(test0):
-  """Test $35.41"""
+def test3641(test0):
+  """Test $36.41"""
   expected = ["$ 20.00: 1",
               "$ 10.00: 1",
               "$  5.00: 1",

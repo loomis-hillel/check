@@ -1,2 +1,8 @@
-check50:
-    checks: changemaker.py
+check50: 
+  files: &check50_files # "Alias", in YAML-speak, for the files we include in check50
+    - !exclude "*"
+    - !require ChangeMaker.java
+  checks: changemaker.py
+
+submit50:
+  files: *check50_files # Accessing the same files for submit50
